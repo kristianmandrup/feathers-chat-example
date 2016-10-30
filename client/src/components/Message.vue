@@ -1,6 +1,8 @@
 <template>
-  <td><span v-bind:class="{ 'pending': isPending }">{{ message.text }}</span></td>
-  <td><button :disabled="isPending" type="submit" @click="tryRemoveMessage(message)">X</button></td>
+  <span class="message">
+    <td><span v-bind:class="{ 'pending': isPending }">{{ message.text }}</span></td>
+    <td><button :disabled="isPending" type="submit" @click="tryRemoveMessage(message)">X</button></td>
+  </span>
 </template>
 <style media="screen">
   .pending {

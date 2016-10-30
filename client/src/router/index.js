@@ -6,15 +6,14 @@ import Messages from '../components/Messages'
 
 Vue.use(VueRouter)
 
-var router = new VueRouter()
+const routes = [
+  { path: '/index', component: Index, name: 'index' },
+  { path: '/messages', component: Messages, name: 'messages' }
+]
 
-router.map({
-  '/index': {
-    component: Index
-  },
-  '/messages': {
-    component: Messages
-  }
+const router = new VueRouter({
+  mode: 'history',
+  routes
 })
 
 export default router

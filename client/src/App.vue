@@ -9,8 +9,8 @@
         </div>
         <div class="gird__col grid__col--s-12-of-12 grid__col--4-of-5 grid__col--centered">
             <p class="padding-bottom text-align">
-              <a v-link="{ path: '/index' }">Go to Home</a>
-              <a v-link="{ path: '/messages' }">Go to Messages</a>
+              <router-link to="{ name: 'index' }">Go to Home</router-link>
+              <router-link to="{ name: 'messages' }">Go to Messages</router-link>
             </p>
         </div>
         <div class="gird__col grid__col--s-12-of-12 grid__col--4-of-5 grid__col--centered">
